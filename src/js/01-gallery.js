@@ -14,10 +14,6 @@ const listOfGallery = galleryItems
   .join('');
 gallery.insertAdjacentHTML('beforeend', listOfGallery);
 
-gallery.addEventListener('click', onOpenModel);
-function onOpenModel(evt) {
-  evt.preventDefault();
-}
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
