@@ -20,6 +20,7 @@ function onSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
   localStorage.removeItem(FEEDBACK_FORM);
+  console.log(formData);
 }
 
 function saveData() {
